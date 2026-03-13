@@ -8,6 +8,7 @@ public class lat {
         int n = sc.nextInt();
         System.out.println(n);
         System.out.println(6);
+        System.out.println(6);
     }
 
 }
