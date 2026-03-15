@@ -13,11 +13,6 @@ public class Array_List {
       }
          System.out.println("Array List is : ");
          System.out.println(array);
-
-
-
-
-
 }
 
     }
