@@ -35,8 +35,8 @@ public class Constractor {
         object.name = st;
         object.id = i;
 
-        System.out.println(object.name);
-        System.out.println(object.id);
+        System.out.println(object.getId());
+        System.out.println(object.getName());
 
 
 
