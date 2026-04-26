@@ -28,12 +28,17 @@ public class Constractor {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-                String st = sc.nextLine();
-        int i = sc.nextInt();
+
         info object = new info();
+
+        String st = sc.nextLine();
+        int i = sc.nextInt();
 
         object.name = st;
         object.id = i;
+
+        //object.setName("Fagun");
+        //object.setId(251030);
 
         System.out.println(object.getId());
         System.out.println(object.getName());
