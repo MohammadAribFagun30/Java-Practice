@@ -1,28 +1,28 @@
 package com.company;
-
- class multi extends Thread
+import java.util.*;
+class MyRunnable implements Runnable
 {
-    @Override
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
     public void run()
     {
-        for(int i=1; i<=5; i++)
-        {
-            System.out.println(i);
+       for(int i=1; i<=n; i++)
+       {
+           System.out.println("Runnable Thread : "+i);
+           try {
+               Thread.sleep(1000);
+           } catch (Exception x) {
+               x.printStackTrace();
+           }
+       }
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
     }
-
 }
+
 public class Multithreading {
     public static void main(String[] args)
     {
-        multi mything = new multi();
-        mything.start();
-
+        Thread t1 = new Thread((new MyRunnable()));
+        t1.start();
     }
 }
